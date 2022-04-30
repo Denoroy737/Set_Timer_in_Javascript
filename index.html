@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-gradient-to-tr from-rose-100 to-teal-100">
+    <h1 class="text-3xl font-mono text-center">Welcome to Js-Timer</h1>
+    <section class="text-gray-600 body-font">
+      <!-- current Time -->
+      <div
+        class="container mx-auto flex px-5 py-10 items-center justify-center flex-col"
+      >
+        <h1 class="text-7xl pb-5" id="times-heading"></h1>
+        <!-- Our Heading -->
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Add Your Timer Below Input
+          </h1>
+          <!-- timepicker here -->
+          <input
+            type="text"
+            value=""
+            placeholder="Enter your text"
+            name="time"
+            id="addtext"
+            class="py-2 text- text-center rounded-md bg-gray-300"
+          />
+          <input
+            type="time"
+            value=""
+            name="time"
+            id="addtime"
+            class="py-2 text-center bg-gray-300 rounded-md border-black"
+          />
+          <div class="flex justify-center">
+            <button
+              id="addbtn"
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 my-4 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-wrap max-w-7xl my-2 mx-auto" id="card"></div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
